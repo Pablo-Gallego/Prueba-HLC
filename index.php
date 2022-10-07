@@ -49,7 +49,6 @@
     echo "<p>Esto tambien</p>";
     ?>
    <ul>
-       
         <li><a class="active" href="index.html" target="_blank">Inicio</a></li> 
         <li><a href="https://pablo-gallego.github.io/Prueba-HLC/" class="rss" target="_blank">Github</a></li>
         <li><a href="Get.php" target="_blank">Get</a></li>
