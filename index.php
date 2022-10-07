@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mi primera web</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    <<h1>hola mundo</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <?php
+    error_reporting(E_ALL);
+    echo "<h1><center>Hola Mundo</center></h1>";
+    ?>
+   
+
+
+//Para poder visualizar el archivo PHP debemos de tener activo el servidor y usar un navegador poner la url donde se encuentre el archivo EJEMPLO: localhost/PHP_Pruebas
+
+</body>
 </html>
