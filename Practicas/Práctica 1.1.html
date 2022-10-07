@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 
+• Los elementos del formulrio deben ir en la columna de la derecha
+• Para nombre y apellidos un único campo de texto
+• Para curso una option con varios valores
+• Para rango de edad varios botones radio
+• Para usuario otro campo de texto
+• Para contraseña campo password
+• Añadir fuera de tabla un botón de envío
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 1.1 Formulario HTML</title>
+    <style type="text/css">
+        table,
+        tr,
+        td {
+            border: solid 1px;
+        }
+
+        table {
+            width: 80%;
+        }
+
+        .etiqueta p {
+            text-align: right;
+        }
+
+        .campo {
+            text-align: center;
+
+        }
+
+        input {
+            text-align: center;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        label {
+            text-align: center;
+            color: black;
+        }
+
+        td.campo {
+            width: 500px;
+            background-color: #FCE4CA;
+        }
+        
+        .botones {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>FORMULARIO DE REGISTRO</h2>
+    <h4>Autor: Pablo Gallego Martínez</h4>
+    <h4>Fecha de creaci&oacute;n: 30/09/2022</h4>
+    <form action="/action_page.php">
+    <table>
+        <tr>
+            <td class="etiqueta">
+                <p>Nombre y apellidos</p>
+            </td>
+            <td class="campo">
+                <input style="background-color: #FCE4CA;" type="text" id="nombre_completo" name="nombre_completo" value=""><br>
+            </td>
+        </tr>
+        <tr>
+            <td class="etiqueta">
+                <p>Curso</p>
+            </td>
+            <td class="campo">
+                <input type="radio" id="1ASIR" name="Curso" value="1ASIR">
+                <label for="1ASIR">1 ASIR</label><br>
+                <input type="radio" id="2ASIR" name="Curso" value="2ASIR">
+                <label for="2ASIR">2 ASIR</label><br>
+                <input type="radio" id="1DAW" name="Curso" value="1DAW">
+                <label for="1DAW">1 DAW</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="etiqueta">
+                <p>Rango de edad</p>
+            </td>
+            <td class="campo">
+                    <input type="radio" id="18" name="Edad" value="18">
+                    <label for="18">18 años</label><br>
+                    <input type="radio" id="19" name="Edad" value="19">
+                    <label for="19">19 años</label><br>
+                    <input type="radio" id="20" name="Edad" value="20">
+                    <label for="20">20 años</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td class="etiqueta">
+                <p>Usuario</p>
+            </td>
+            <td class="campo">
+                <input style="background-color: #FCE4CA;" type="text" id="usuario" name="usuario" value=""><br>
+            </td>
+        </tr>
+        <tr>
+            <td class="etiqueta">
+                <p>Contrase&ntilde;a</p>
+            </td>
+            <td class="campo">
+                <input style="background-color: #FCE4CA;" type="password" id="password" name="password" value=""><br>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div class="botones">
+        <input type="submit" value="Envío">
+        <input type="reset" value="Limpiar">
+        <input type="date" value="Fecha">
+    </div>
+</body>
+</form>
+</html>
