@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Los datos untroducidos</h1>
-<p>El valor del nombre es: <?php isset($_POST["nombre"]) ? print $_POST["nombre"] : ""; ?></p><br>
+<p>El valor del nombre es: <?php isset($_POST["nombre_completo"]) ? print $_POST["nombre_completo"] : ""; ?></p><br>
 <p>El valor del curso es: <?php isset($_POST["Curso"]) ? print $_POST["Curso"] : ""; ?></p><br>
 <p>El valor de la edad es: <?php isset($_POST["Edad"]) ? print $_POST["Edad"] : ""; ?></p><br>
 <p>El valor del usuario es: <?php isset($_POST["usuario"]) ? print $_POST["usuario"] : ""; ?></p><br>
