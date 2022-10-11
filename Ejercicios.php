@@ -11,6 +11,7 @@ echo "yo soy $nombre";
 $direccion = "Zayas";
 $telefono = "313215616";
 echo "yo soy $direccion";
+echo "<br>";
 echo "y tu numero de telefono es $telefono"
 ?> <br>
 
