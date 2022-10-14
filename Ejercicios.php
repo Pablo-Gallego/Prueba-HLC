@@ -5,12 +5,12 @@
 <!--Ejercicio 1-->
 <?php
 $nombre = "pablo";
-echo "yo soy $nombre";
+echo "Yo soy $nombre";
 ?> <br>
 
 <!--Ejercicio 2-->
 <?php
-$direccion = "Zayas";
+$direccion = "Calle";
 $telefono = "313215616";
 echo "Vivo en la calle $direccion";
 echo "<br>";
@@ -65,5 +65,85 @@ echo "y tu numero de telefono es $telefono"
         <td><?php $Ten = "Diez"; echo "$Ten" ?> </td>
     </tr>
 </table>
+
+<!--Ejercicio 4-->
+
+<table border="1px" align="center">
+<?php
+$SEGAD = "SEGAD"; 
+$SERED = "SERED"; 
+$ADSO = "ADSO"; 
+$IMWEB = "IMWEB"; 
+$HLC = "HLC"; 
+$EMPRE = "EMPRE";
+$ADSGB = "ADSGB";
+?>
+    <tr align="center">
+        <th colspan="6">Horaio</th>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td>Lunes</td>
+        <td>Martes</td>
+        <td>Miercoles</td>
+        <td>Jueves</td>
+        <td>Viernes</td>
+    </tr>
+    <tr align="center">
+        <td>8:15 - 9:15</td>
+        <td><?php echo "$SEGAD"?> </td>
+        <td><?php echo "$ADSGB"?></td>
+        <td><?php echo "$ADSO"?></td>
+        <td><?php echo "$EMPRE"?></td>
+        <td><?php echo "$HLC"?></td>
+    </tr>
+    <tr align="center">
+        <td>9:15 - 10:15</td>
+        <td><?php echo "$SEGAD"?> </td>
+        <td><?php echo "$SERED"?></td>
+        <td><?php echo "$ADSO"?></td>
+        <td><?php echo "$EMPRE"?></td>
+        <td><?php echo "$HLC"?></td>
+    </tr>
+    <tr align="center">
+        <td>10:15 - 11:15</td>
+        <td><?php echo "$SERED"?></td>
+        <td><?php echo "$SERED"?></td>
+        <td><?php echo "$SEGAD"?></td>
+        <td><?php echo "$ADSO"?></td>
+        <td><?php echo "$ADSGB"?></td>
+    </tr>
+    <tr align="center">
+        <td>11:15 - 11:45</td>
+        <td colspan="6">Recreo</td>
+    </tr>
+    <tr align="center">
+        <td>11:45 - 12:45</td>
+        <td><?php echo "$SERED"?></td>
+        <td><?php echo "$HLC"?></td>
+        <td><?php echo "$SEGAD"?></td>
+        <td><?php echo "$ADSO"?></td>
+        <td><?php echo "$ADSGB"?></td>
+    </tr>
+    <tr align="center">
+        <td>12:45 - 13:45</td>
+        <td><?php echo "$ADSO"?></td>
+        <td><?php echo "$EMPRE"?></td>
+        <td><?php echo "$IMWEB"?></td>
+        <td><?php echo "$SERED"?></td>
+        <td><?php echo "$IMWEB"?></td>
+    </tr>
+    <tr align="center">
+        <td>13:45 - 14:45</td>
+        <td><?php echo "$ADSO"?></td>
+        <td><?php echo "$EMPRE"?></td>
+        <td><?php echo "$IMWEB"?></td>
+        <td><?php echo "$SERED"?></td>
+        <td><?php echo "$IMWEB"?></td>
+    </tr>
+</table>
+
+
+
 </body>
 </html>
