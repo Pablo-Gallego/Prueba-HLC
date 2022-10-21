@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+// Check if the type of a variable is float 
+$x = 10.365;
+var_dump($x);
+?>  
+
+</body>
+</html>

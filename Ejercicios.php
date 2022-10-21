@@ -3,12 +3,14 @@
 <body>
 
 <!--Ejercicio 1-->
+<h1>Ejercicio 1</h1>
 <?php
 $nombre = "pablo";
 echo "Yo soy $nombre";
 ?> <br>
 
 <!--Ejercicio 2-->
+<h1>Ejercicio 2</h1>
 <?php
 $direccion = "Calle";
 $telefono = "313215616";
@@ -18,7 +20,7 @@ echo "y tu numero de telefono es $telefono"
 ?> <br>
 
 <!--Ejercicio 3-->
-
+<h1>Ejercicio 3</h1>
 <table border="1px" align="center">
     <tr align="center">
         <th>Inglés</th>
@@ -67,7 +69,7 @@ echo "y tu numero de telefono es $telefono"
 </table>
 
 <!--Ejercicio 4-->
-
+<h1>Ejercicio 4</h1>
 <table border="1px" align="center">
 <?php
 $SEGAD = "SEGAD"; 
@@ -143,7 +145,14 @@ $ADSGB = "ADSGB";
     </tr>
 </table>
 
-
-
+<!--Ejercicio 5-->
+<h1>Ejercicio 5</h1>
+<p>
+    Tu nombre tiene
+    <?php
+        echo strlen("PabloGallegoMartinez");
+    ?> 
+     letras
+</p>
 </body>
 </html>
