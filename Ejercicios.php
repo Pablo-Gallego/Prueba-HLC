@@ -262,18 +262,61 @@ La cantidad en pesetas que se quiere convertir deberá estar almacenada en una v
 			</table>
             <input type="submit" value="Convertir">
 		</form>
-        <p align="center"></p>
+        
 
-<!--Ejercicio 10-->
+<!--Ejercicio 10
+Escribe un programa que pinte por pantalla una pirámide rellena a base de asteriscos. 
+La base de la pirámide debe estar formada por 9 asteriscos.-->
+
 <h1 align="center">Ejercicio 10</h1>
+<p align="center">
+    <?php function piramide_rellena ($filas) 
+    {
+    $base = null;
+    for ($i = 1; $i <= $filas; $i++) 
+        {
+        for ($h = $i; $h <= $i; $h++) 
+            {
+                $base .= "*";
+            }
+        echo $cadena."<br />";
+        }
+    }
+    piramide_rellena (9);
+    ?>
+</p>
 
 
-<!--Ejercicio 11-->
+
+<!--Ejercicio 11
+Igual que el programa anterior, 
+pero esta vez la pirámide estará hueca (se debe ver únicamente el contorno hecho con asteriscos).-->
+
 <h1 align="center">Ejercicio 11</h1>
+<p align="center">
+    <?php function piramide_hueca ($filas) 
+    {
+    $base = null;
+    for ($i = 1; $i <= $filas; $i++) 
+        {
+        for ($h = $i; $h <= $i; $h++) 
+            {
+                $base .= "*";
+            }
+        echo $cadena."<br />";
+        }
+    }
+    piramide_hueca (9);
+    ?>
+</p>
 
+<!--Ejercicio 12
+Igual que el programa anterior, pero esta vez la pirámide debe aparecer invertida, 
+con el vértice hacia abajo.-->
 
-<!--Ejercicio 12-->
 <h1 align="center">Ejercicio 12</h1>
+
+
 
 
 <!--Ejercicio extra-->
