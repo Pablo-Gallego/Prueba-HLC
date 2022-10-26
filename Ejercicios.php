@@ -272,13 +272,11 @@ La base de la pirámide debe estar formada por 9 asteriscos.-->
 <p align="center">
     <?php function piramide_rellena ($filas) 
     {
-    $base = null;
-    for ($i = 1; $i <= $filas; $i++) 
+    $cadena = null;
+    while($filas)
         {
-        for ($h = $i; $h <= $i; $h++) 
-            {
-                $base .= "*";
-            }
+        $cadena .= "*";
+        $filas--;
         echo $cadena."<br />";
         }
     }
@@ -286,37 +284,58 @@ La base de la pirámide debe estar formada por 9 asteriscos.-->
     ?>
 </p>
 
-
-
 <!--Ejercicio 11
 Igual que el programa anterior, 
 pero esta vez la pirámide estará hueca (se debe ver únicamente el contorno hecho con asteriscos).-->
 
 <h1 align="center">Ejercicio 11</h1>
 <p align="center">
-    <?php function piramide_hueca ($filas) 
-    {
-    $base = null;
-    for ($i = 1; $i <= $filas; $i++) 
+    <?php $n=8;
+	for($i=1; $i <= $n; $i++){
+		 for ($s=1; $s <= $n; $s++) 
         {
-        for ($h = $i; $h <= $i; $h++) 
+			echo '&nbsp;';
+		}
+		for($j=1; $j <= 2* $i - 1 ; $j++)
+        {
+			 if ($j == 1 || $j==2 * $i-1) 
             {
-                $base .= "*";
-            }
-        echo $cadena."<br />";
-        }
-    }
-    piramide_hueca (9);
-    ?>
-</p>
+				echo '*';
+			} else 
+            {
+				echo '&nbsp;';
+			}
+		}
+		echo '<br>';
+	}
+    echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*********';
+?>
 
 <!--Ejercicio 12
 Igual que el programa anterior, pero esta vez la pirámide debe aparecer invertida, 
 con el vértice hacia abajo.-->
 
 <h1 align="center">Ejercicio 12</h1>
+<p align="center">
+    <?php 
+    echo '&nbsp;*********';
+    echo '<br>';
+    $n=8;
+	for ($i=$n; $i>=1 ; $i--) { 
+		for($s=0;$s<=$n-$i;$s++){
+			echo '&nbsp;';
+		}
+		for($j=1;$j<=2*$i-1;$j++){
+			if($j==1||$j==2*$i-1){
+				echo '*';
+			}else{
+				echo '&nbsp;';
+			}
+		}
+		echo '<br>';
+	}
 
-
+?>
 
 
 <!--Ejercicio extra-->
