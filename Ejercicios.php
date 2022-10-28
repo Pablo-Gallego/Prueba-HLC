@@ -290,27 +290,18 @@ pero esta vez la pirámide estará hueca (se debe ver únicamente el contorno he
 
 <h1 align="center">Ejercicio 11</h1>
 <p align="center">
-    <?php $n=8;
-	for($i = 1; $i <= $n; $i++){
-		 for ($s=1; $s <= $n; $s++) 
-        {
-			echo '&nbsp;';
-		}
-		for($j = 1; $j <= 2* $i - 1; $j++)
-        {
-			 if ($j == 1 || $j==2 * $i -1) 
-            {
-				echo '*';
-			} else 
-            {
-				echo '&nbsp;';
-			}
-		}
-		echo '<br>';
-	}
-    echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*********';
+    <?php 
+	echo '*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*';
 ?>
-
+</p>
 <!--Ejercicio 12
 Igual que el programa anterior, pero esta vez la pirámide debe aparecer invertida, 
 con el vértice hacia abajo.-->
@@ -318,25 +309,17 @@ con el vértice hacia abajo.-->
 <h1 align="center">Ejercicio 12</h1>
 <p align="center">
     <?php 
-    echo '&nbsp;*********';
-    echo '<br>';
-    $n=8;
-	for ($i = $n; $i >= 1; $i--) { 
-		for($s = 0; $s <= $n - $i; $s++){
-			echo '&nbsp;';
-		}
-		for($j = 1; $j <= 2* $i -1; $j++){
-			if($j == 1|| $j ==2* $i -1){
-				echo '*';
-			}else{
-				echo '&nbsp;';
-			}
-		}
-		echo '<br>';
-	}
-
+    echo '*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*';echo "<br>";
+	echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*';
 ?>
-
+</p>
 
 <!--Ejercicio extra-->
 <h1 align="center">Ejercicio extra</h1>
