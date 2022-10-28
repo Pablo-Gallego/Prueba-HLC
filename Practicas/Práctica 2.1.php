@@ -17,7 +17,7 @@ La cantidad en euros que se quiere convertir deberá estar almacenada en una var
 
 <h1 align="center">Ejercicio 8</h1>
     <H2 align="center">conversor de euros a pesetas</H2>
-		<form align="center" action="Ejercicios.php" method="POST">
+		<form align="center" action="Práctica 2.1.php" method="POST">
 			<table align="center">
                 <tr>
                 <td>Euros</td>
@@ -38,8 +38,7 @@ La cantidad en euros que se quiere convertir deberá estar almacenada en una var
 		</form>
 
 <!--Ejercicio 12
-Igual que el programa anterior, pero esta vez la pirámide debe aparecer invertida, 
-con el vértice hacia abajo.-->
+Igual que el programa anterior, pero esta vez la pirámide debe aparecer invertida, con el vértice hacia abajo.-->
 
 <h1 align="center">Ejercicio 12</h1>
 <p align="center">
