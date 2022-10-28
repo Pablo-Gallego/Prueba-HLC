@@ -45,12 +45,12 @@ Igual que el programa anterior, pero esta vez la pirámide debe aparecer inverti
     <?php 
     echo '*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*';echo "<br>";
 	echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
-    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
-    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
-    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
-    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
-    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
-    echo '*&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*';echo "<br>";
+    echo '*&nbsp;&nbsp;*';echo "<br>";
     echo '*';
 ?>
 </p>
