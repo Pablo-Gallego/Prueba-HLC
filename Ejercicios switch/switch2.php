@@ -6,7 +6,7 @@
 </head>
 <body align="center">
   <h1>Dia de la semana</h1>
-  <p>Pon la primera letra en mayuscula y no uses tildes</p>
+  <p>No uses tildes</p>
     <form action="switch2.php" method="post">
     <table align="center">
     <tr>
@@ -25,29 +25,33 @@
 	switch ($_POST['Dia']) 
     {
 		case 'Lunes':
+    case 'lunes':
 			echo "Hoy es ".$Dia;		
 			break;
     case 'Martes':
+    case 'martes':
       echo "Hoy es ".$Dia;		
       break;
     case 'Miercoles':
+    case 'miercoles':
       echo "Hoy es ".$Dia;		
       break;
     case 'Jueves':
+    case 'jueves':
 			echo "Hoy es ".$Dia;	
       break;
     case 'Viernes':
+    case 'viernes':
       echo "Hoy es ".$Dia;		
       break;
     case 'Sabado':
+    case 'sabado':
       echo "Hoy es ".$Dia;		
       break;
     case 'Domingo':
+    case 'domingo':
       echo "Hoy es ".$Dia;		
       break;
-    case 'lunes' or 'martes' or 'miercoles' or 'jueves' or 'viernes' or 'sabado' or 'domingo':
-      echo "No has puesto la primera en mayuscula";		
-      break;	
 		default:
       echo "No has elegido ningun dia";
 			break;
