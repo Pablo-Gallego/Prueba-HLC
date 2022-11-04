@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>switch</title>
+<title>switch Ej.2</title>
 </head>
 <body align="center">
   <h1>Dia de la semana</h1>
