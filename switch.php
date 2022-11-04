@@ -33,7 +33,7 @@
     <input type="submit" name="enviar" value="Enviar"></input>
     </form>
 
-    <?php 
+  <?php 
 		$primero = $_POST['primero'];
 		$segundo = $_POST['segundo'];
 		switch ($_POST['operacion']) 
@@ -54,6 +54,6 @@
       echo "No se puede realizar la cuenta";
 			break;
 		}
-		 ?>
+	?>
 </body>
 </html>
