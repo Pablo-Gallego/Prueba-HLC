@@ -5,6 +5,7 @@
 <title>switch</title>
 </head>
 <body align="center">
+  <h1>Calculadora</h1>
     <form action="switch.php" method="post">
     <table align="center">
     <tr>
