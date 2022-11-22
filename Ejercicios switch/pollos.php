@@ -45,6 +45,7 @@
     </div>
 
     <div id="sumas">
+    <h1 align="center">Sumas</h1>
         <?php 
         $numero = 1;
         $suma = 1;
@@ -56,12 +57,18 @@
                 $suma++;
             }
         ?>
-
+    </div>
+    <!-- Se pide un script que pida inicialmente un número entero. 
+    Ese número indicará la cantidad de personas de las que queremos introducir usuario y contraseña. 
+    Realiza un bucle for() para la generación de elementos input del total de esos datos personales, 
+    cada persona en un párrafo  -->
+    <div id="ejercio">
+        <h1 align="center">Ejercio 1</h1>
         <p align="center">
         <form action="pollos.php" method="post">
             <table align="center">
                 <tr>
-                    <th>Introduce el número para la suma</th>
+                    <th>Introduce el número para los usuarios</th>
                     <td>
                         <input type="number" name="numero" required></input>
                 </td>
@@ -71,13 +78,14 @@
             </form>
             <?php 
             $numero = $_POST['numero'];
-            $suma = 1;
-            for ($suma > 0; $suma < 10;)
+            if ($numero <= 0)
+            {
+                echo "Introduce un número positivo o mayor que 0";
+            } else
+            for ($numero > 0; $numero < 100;)
             {   
-                echo $numero. "+" . $suma." = ";
-                echo $numero+$suma."<br />";
-                $numero = $numero+$suma;
-                $suma++;
+                 
+                
             }
             ?>
         </p>
