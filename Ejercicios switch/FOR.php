@@ -12,7 +12,7 @@
     Ese número indicará la cantidad de personas de las que queremos introducir usuario y contraseña. 
     Realiza un bucle for() para la generación de elementos input del total de esos datos personales, 
     cada persona en un párrafo  -->
-    <div id="ejercio">
+    <div id="ejercicio1">
         <h1 align="center">Ejercicio 1</h1>
         <p align="center">
         <form action="for.php" method="post">
@@ -32,31 +32,40 @@
             {
                 echo "Introduce un número positivo o mayor que 0";
             } else
-            for ($numero > 0;$numero <10;)
+            for ($i=1; $i <= $numero; $i++)
             {   
-                $numero = $numero -1;
-                echo "  
+                PRINT <<< HERE
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="UTF-8">
+                <title>Bucles</title>
+                </head>
+                <body align="center">
                 <form>
                 <table>
-                <tr>
+                    <tr>
                         <td>
-                        Usuario
+                            Usuario
                         </td>
                         <td>
-                        <input required></input>
+                            <input type="text" required></input>
                         </td>
-                </tr>
-                <tr>
+                    </tr>
+                    <tr>
                         <td>
-                        Contraseña
+                            Contraseña
                         </td>
                         <td>
-                        <input required></input>
+                            <input type="text" required></input>
                         </td>
-                </tr>
+                    </tr>
                 </table>
                 </form>
-                ";   
+                </body>
+                </html>
+                HERE;
+                echo "<br>";
             }
             ?>
         </p>
