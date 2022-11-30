@@ -48,7 +48,7 @@ error_reporting(0)
     <?php 
         $fecha = $_POST['fecha'];
         $hoy = date("Y-m-d");
-        if(date('m-d') == date('m-d', $time)) 
+        if(date('m-d') == date('m-d', $fecha)) 
             {
                 echo "Es tu cumpleaños";
             }

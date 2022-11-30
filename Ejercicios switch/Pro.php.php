@@ -66,8 +66,9 @@
   <?php 
   error_reporting(0)
   ?>
+  
   <?php 
-  $nacimiento = date("$_POST['anno']-$_POST['mes']-$_POST['dia']");
+  $nacimiento = date("$_POST[anno]-$_POST[mes]-$_POST[dia]");
   $fechaactual = date("Y-m-d");
   $edad = $fechaactual - $nacimiento;
 	switch ($edad) 
