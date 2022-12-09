@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 1</title>
+</head>
+<body align="center">
+    <h1>Ejercicio 1</h1>
+    <form action="juego.php" method="post">
+        <table align="center">
+            <tr>
+                <th>Elige cara o cruz</th>
+                <td class="campo">
+                    <input type="radio" id="cruz" name="juego" value="cruz" required>
+                    <label for="cruz">cruz</label><br>
+                    <input type="radio" id="cara" name="juego" value="cara" required>
+                    <label for="cara">cara</label><br>
+                </td>
+            </tr>
+        </table>
+    <input type="submit" name="enviar" value="Lanzar la moneda"/>
+    </form>
+</body>
+</html>
