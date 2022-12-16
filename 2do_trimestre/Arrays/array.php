@@ -1,4 +1,16 @@
-<h1 align="center"> Alumnos y su altura </h1>
+<h1 align="center">Alumnos</h1>
+<p align="center">
+<!-- Array -->
+<?php
+$clase = array("Juan", "Javier", "Pablo", "Paco", "Bernardo");
+echo $clase[0];
+echo $clase[1];
+echo $clase[2];
+echo $clase[3];
+echo $clase[4];
+?>
+</p>
+<h1 align="center">Alumnos</h1>
 <p align="center">
 <!-- Array -->
 <?php
