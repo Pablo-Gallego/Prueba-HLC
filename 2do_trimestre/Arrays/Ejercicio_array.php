@@ -1,53 +1,16 @@
-<table border="1">
-        <tr>
-            <th>Número</th>
-            <td>
-            <p align="center">
-            <!-- Número -->
-            <?php
-            $numero = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
-            $i = count($numero);
-            for($x = 0; $x < $i; $x++) 
-            {
-                echo $numero[$x];
-                echo "<br>";
-            }
-            ?>
-            </p>
-            </td>
+<h1 align="center">Ejercicio 1</h1> 
+<p align="center"><?php
+$numero1 = rand(0,100);
+$numero2 = rand(0,100);
+$numero3 = rand(0,100);
+$numero4 = rand(0,100);
+$numero5 = rand(0,100);
+$numeros = array($numero1 => pow($numero1, 2), $numero2=> pow($numero2, 2) ,$numero3 => pow($numero3, 2) , $numero4 => pow($numero4, 2), $numero5 =>pow($numero5, 2));
+foreach($numeros as $numero => $cuadrado) 
+    {
+        echo "Tu número es " .$numero . " y su cuadrado es " . $cuadrado. " y su cubo es ". pow($numero, 3);
+        echo "<br>";
+    }
+?>
+</p>
 
-
-            <th>Cuadrado</th>
-            <td>
-            <p align="center">
-            <!-- Cuadrado -->
-            <?php
-            $numero = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
-            $i = count($numero);
-            for($x = 0; $x < $i; $x++) 
-            {
-                echo $numero[$x]*$numero[$x];
-                echo "<br>";
-            }
-            ?>
-            </p>
-            </td>
-
-
-            <th>Cubo</th>
-            <td>
-            <p align="center">
-            <!-- Cubo -->
-            <?php
-            $numero = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
-            $i = count($numero);
-            for($x = 0; $x < $i; $x++) 
-            {
-                echo $numero[$x]*$numero[$x]*$numero[$x];
-                echo "<br>";
-            }
-            ?>
-            </p>
-            </td>
-        </tr>
-</table>
