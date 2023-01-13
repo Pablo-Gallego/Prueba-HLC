@@ -1,12 +1,23 @@
 <h1 align="center">Ejercicio 3</h1> 
 <p align="center">
 <?php
+$saltos = $_POST['saltos'];
 $numero = $_POST['numero'];
 $i = count($numero);
-for($x = 1; $x < $i; $x++) 
+for($x = $saltos; $x < $i; $x++) 
 {
-echo $numero[$x];echo "<br>";
+echo $numero[$x];
+echo "<br>";
 }
-echo $numero[0];
-  ?>
+?>
+<?php
+$saltos = $_POST['saltos'];
+$numero = $_POST['numero'];
+$i = count($numero);
+for($x = 0; $x < $saltos; $x++) 
+{
+echo $numero[$x];
+echo "<br>";
+}
+?>
 </p>
