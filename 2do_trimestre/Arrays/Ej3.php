@@ -2,7 +2,7 @@
 <p align="center">
 <?php
 $numero = $_POST['numero'];
-$i = count($numero);;
+$i = count($numero);
 for($x = 1; $x < $i; $x++) 
 {
 echo $numero[$x];echo "<br>";
