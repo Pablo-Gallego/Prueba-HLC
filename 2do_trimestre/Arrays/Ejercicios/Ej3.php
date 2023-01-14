@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 3</title>
+</head>
+<body>
 <h1 align="center">Ejercicio 3</h1> 
 <p align="center">
 <?php
@@ -21,3 +27,5 @@ echo "<br>";
 }
 ?>
 </p>
+</body>
+</html>

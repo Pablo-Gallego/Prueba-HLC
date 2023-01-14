@@ -1,4 +1,10 @@
-<h1 align="center">Ejercicio 3</h1> 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio 4</title>
+</head>
+<body>
+<h1 align="center">Ejercicio 4</h1> 
 <p align="center">
 <?php
 $numeros = array();
@@ -25,3 +31,5 @@ foreach ($numeros as $numero)
 }
 ?>
 </p>
+</body>
+</html>
