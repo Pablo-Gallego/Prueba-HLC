@@ -5,8 +5,7 @@
 </head>
 <body>
 <h1 align="center">Ejercicio 5</h1> 
-<div align="center">
-<p align="center">
+<p>
 <?php
 $temperaturas = $_POST['temperaturas'];
 $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
@@ -22,6 +21,5 @@ if(isset($_POST["temperaturas"])) {
     }
 ?>
 </p>
-</div>
 </body>
 </html>
