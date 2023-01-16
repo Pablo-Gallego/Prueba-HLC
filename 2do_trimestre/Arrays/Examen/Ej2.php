@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ejercicio 4</title>
+  <title>Ejercicio 2</title>
 </head>
 <body>
-<h1 align="center">Ejercicio 4</h1> 
+<h1 align="center">Ejercicio 2</h1> 
 <p align="center">
 <?php
-$numeros = array();
-for ($i = 0; $i < 100; $i++) 
-{
-    $numeros[] = rand(0, 20);
-    echo $numeros[$i]. " - "; 
-}
-echo  "<br>"; 
-echo  "-----------------------------------------------------------------------------------------------------"; 
-echo  "<br>"; 
-$valor1 = $_POST['valor1'];
-$valor2 = $_POST['valor2'];
-for ($i = 0; $i < count($numeros); $i++) 
-{
-    if ($numeros[$i] == $valor1) 
-    {
-        $numeros[$i] = "<span style='color: red;'>" . $valor2 . "</span>";
-    } 
-}
-foreach ($numeros as $numero) 
-{
-    echo $numero . " - ";
+// Crear array asociativo
+$alumnos = array("Marta" => 7.8,    "Luis" => 5,    "Lorena" => 6.9);
+
+// Mostrar las notas de forma ordenada
+foreach ($alumnos as $nombre => $notas) {
+    echo "$nombre: ";
+    sort($notas);
+    foreach ($notas as $nota) {
+        echo "$nota ";
+    }
+    echo "<br>";
 }
 ?>
+
 </p>
 </body>
 </html>
