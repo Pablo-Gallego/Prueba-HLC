@@ -2,14 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ejercicio 1</title>
+<title>Ejercicio</title>
 </head>
 <?php
-error_reporting(0)
-?>
-<?php
 echo '
-    <body align="center" style="background-color: '. $_POST['color'] .'">
+    <body align="center" style="background-color: '. $_COOKIE['fondo'] .'">
     <form action="ej1.php" method="post">
         <h1>Elige un nuevo color</h1>
         <p align="center">
@@ -24,13 +21,12 @@ echo '
     </form>';
     if(isset($_POST['color']))
     {
-        setcookie("cookie", $_POST['color'], time() + 60);
-        echo "La cookie contiene el color: " . $_COOKIE['cookie'];
+        setcookie("fondo", $_POST['color'], time() + 60);
+        echo "La cookie contiene el color: " . $_POST['color'];
     } else
-    {
+    { 
         echo "Se ha producido un error";
     }
     echo "</body>";
-?>
-<!-- Para refrescar $_Cookie hay que refrescar la página -->
+?> 
 </html>

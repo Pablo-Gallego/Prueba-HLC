@@ -10,7 +10,7 @@ error_reporting(0)
 <?php
 echo '
     <body align="center" style="background-color: '. $_POST['color'] .'">
-    <form action="ej1.php" method="post">
+    <form action="ej3.php" method="post">
         <h1>Elige un nuevo color</h1>
         <p align="center">
             <input type="radio" name="color" value="red" required>
@@ -24,7 +24,7 @@ echo '
     </form>';
     if(isset($_POST['color']))
     {
-        setcookie("cookie", $_POST['color'], time() + 60);
+        setcookie("cookie", $_POST['color'], time() + 5);
         echo "La cookie contiene el color: " . $_COOKIE['cookie'];
     } else
     {
