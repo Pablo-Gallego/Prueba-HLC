@@ -15,7 +15,7 @@ echo '
     <circle cx="50" cy="50" r="40" stroke="green"
     style="fill:' . $_COOKIE['fondo'] . ';stroke-width:4;stroke="green" />
     </svg>';
-    echo "<br>La cookie tiene el valor: ". $_COOKIE['fondo']. " </body>";
+    echo "</body>";
     // Hay que ejecutar antes el 5
 ?> 
 </html>

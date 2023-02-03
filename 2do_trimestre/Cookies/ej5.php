@@ -23,7 +23,7 @@ echo '
     { 
         $color = $_COOKIE['fondo'];
         setcookie('fondo', $color, time() + 20);
-        echo "La cookie tiene el valor: ". $_COOKIE['fondo'];
+        echo "La cookie del color tiene el valor: ". $_COOKIE['fondo'];
     } else {
         $r = rand(0, 255);
         $g = rand(0, 255);
