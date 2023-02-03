@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ejercicio 2</title>
+<title>Ejercicio 4</title>
 </head>
 <?php
 error_reporting(0)
 ?>
 <?php
 echo '
-    <body align="center" style="background-color: '. $_COOKIE['fondo'] .'">
-    <form action="ej2.php" method="post">
+    <body align="center" style="background-color: '. $_COOKIE['color'] .'">
+    <form action="index.php" method="post">
         <h1>Elige un nuevo color</h1>
         <p align="center">
             <input type="radio" name="color" value="red" required>
@@ -22,14 +22,7 @@ echo '
         </p>
         <input type="submit" name="enviar" value="Cambiar el color">
     </form>';
-    if(isset($_POST['color']))
-    {
-        setcookie("fondo", $_POST['color'], time() + 60);
-        echo "La cookie contiene el color: " . $_POST['color'];
-    } else
-    { 
-        echo "Se ha producido un error";
-    }
     echo "</body>";
-?> 
+?>
+<!-- Para refrescar $_Cookie hay que refrescar la página -->
 </html>

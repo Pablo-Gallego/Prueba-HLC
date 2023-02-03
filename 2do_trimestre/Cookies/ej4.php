@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Ejercicio 1</title>
+<title>Ejercicio 4</title>
 </head>
 <?php
 error_reporting(0)
@@ -24,7 +24,7 @@ echo '
     </form>';
     if(isset($_POST['color']))
     {
-        setcookie("cookie", $_POST['color'], time() + 5, '/Prueba-HLC/2do_trimestre/Cookies/');
+        setcookie("cookie", $_POST['color'], time() + 5, '/Prueba-HLC/prueba/');
         echo "La cookie contiene el color: " . $_COOKIE['cookie'];
     } else
     {
