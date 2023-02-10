@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     {
         anadir_carro($productos[$_POST['Procuctoss']]);
         foreach ($productos as $producto) {
-            $total = $precio['1'];
+            $total = $producto['precio'];
         }
         
         echo "El valor acumulado en el carrito es: $total";
