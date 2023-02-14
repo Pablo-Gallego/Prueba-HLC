@@ -98,12 +98,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             <td><?php echo $producto['precio']; ?></td>
             <td>
                 <input type="hidden" name="Procuctoss" value="<?php echo $index; ?>">
-                <input type="submit" name="comprar" value="Añadir al carrito">
+                <?php
+                $productonom = $producto['nombrePr'];
+                echo "<input type='submit' name='comprar' value='$productonom'>";?>
             </form>
           </td>
         </tr>
     <?php } 
-    
+    switch($_POST['accion']) {
+        case "incA":
+        $_SESSION['a']++;
+        break;
+        case "decA":
+        $_SESSION['a']--;
+        break;
+        case "incB":
+        $_SESSION['b']++;
+        break;
+        case "decB":
+        $_SESSION['b']--;
+        break;
+    }
     ?>
 </table>
 <table align='center'>

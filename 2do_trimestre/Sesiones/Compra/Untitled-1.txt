@@ -15,7 +15,6 @@ $productos = array(
     array("nombrePr" => "Dragon ball fighterz", "descripcion" => "Este es el primer juego de la saga fighterz", "precio" => 28, "imagen" => "fighterz.jpg")
 );
 
-
 // Función para añadir un producto al carrito
 function Anadir_Carro($producto)   
 {
@@ -32,7 +31,6 @@ function Anadir_Carro($producto)
     }
 }
   
-  
 // Función para eliminar un producto del carrito
 function Borrar_Carro($producto_carro) {
     global $_SESSION;
@@ -42,16 +40,10 @@ function Borrar_Carro($producto_carro) {
 // Si se reciben datos desde un formulario
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
-    $total = 0;
     // Si se ha pulsado el botón Comprar
     if (isset($_POST['comprar'])) 
     {
-        anadir_carro($productos[$_POST['Procuctoss']]);
-        foreach ($productos as $producto) {
-            $total = $producto['precio'];
-        }
-        
-        echo "El valor acumulado en el carrito es: $total";
+        anadir_carro($productos[$_POST['Procuctoss']]); 
     }
     // Si se ha pulsado el botón Eliminar
     if (isset($_POST['borrar'])) 
@@ -59,7 +51,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         borrar_carro($_POST['nombrePr']);
     }
 }
+
+
+
 ?>
+
+<?php 
+$precio = $producto['precio'];
+switch($_POST['comprar']) {
+    case "comprar":
+    $_SESSION['carrito'] += $precio;
+    break;
+    case "borrar":
+    $_SESSION['carrito'] -= $precio;
+    break;
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -80,9 +88,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     </style>
 </head>
 <body>
-  <h1>
-      Compra
-  </h1>
+<h1>
+carrito = <?php echo$_SESSION['carrito']?><br>
+</h1>
+  <h1>Comprar</h1>
 <table align='center'>
     <tr>
         <th>Imagen</th>
@@ -92,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     </tr>
     <?php foreach ($productos as $index => $producto) { ?>
         <tr>
-            <form action="" method="post">
+            <form action="#" method="post">
             <td><img src="<?php echo $producto['imagen']; ?>"  width="50" height="60" alt="<?php echo $producto['nombrePr'];?>"></td>
             <td><?php echo $producto['nombrePr']; ?></td>
             <td><?php echo $producto['precio']; ?></td>
@@ -104,27 +113,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         </tr>
     <?php } 
     
-    ?>
-</table>
-<table align='center'>
-    <tr>
-        <th>Imagen</th>
-        <th>Nombre</th>
-        <th>Precio</th>
-        <th>Acción</th>
-    </tr>
-    <?php foreach ($productos as $index => $producto) { ?>
-        <tr>
-            <form action="" method="post">
-            <td><img src="<?php echo $producto['imagen']; ?>"  width="50" height="60" alt="<?php echo $producto['nombrePr'];?>"></td>
-            <td><?php echo $producto['nombrePr']; ?></td>
-            <td><?php echo $producto['precio']; ?></td>
-            <td>
-                <input type="submit" name="Eliminar" value="Añadir al carrito">
-            </form>
-            </td>
-        </tr>
-    <?php } 
     ?>
 </table>
 </body>
