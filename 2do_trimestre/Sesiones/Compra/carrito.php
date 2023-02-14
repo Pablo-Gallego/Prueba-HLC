@@ -4,10 +4,10 @@
 <?php // Tienda ///////////////////////////////////////////////////////
 
   $producto = array ( 
-    "xenoverse" => array( "nombre" => "Pelikan Souvëran M-1000", "precio" => 545, "imagen" => "xenoverse.jpg"),
-    "xenoverse2" => array( "nombre" => "Parker Duofold International", "precio" => 406, "imagen" => "xenoverse2.jpg"),
-    "kakarot" => array( "nombre" => "Visconti Van Gogh", "precio" => 180, "imagen" => "kakarot.jpg"),
-    "fighterz" => array( "nombre" => "Waterman Expert", "precio" => 103.55, "imagen" => "fighterz.jpg")
+    "xenoverse" => array( "nombre" => "Dragon ball xenoverse", "precio" => 545, "imagen" => "xenoverse.jpg"),
+    "xenoverse2" => array( "nombre" => "Dragon ball xenoverse 2", "precio" => 406, "imagen" => "xenoverse2.jpg"),
+    "kakarot" => array( "nombre" => "Dragon ball kakarot", "precio" => 180, "imagen" => "kakarot.jpg"),
+    "fighterz" => array( "nombre" => "Dragon ball fighterz", "precio" => 103.55, "imagen" => "fighterz.jpg")
   );
 
   foreach ($producto as $codigo => $elemento) {
