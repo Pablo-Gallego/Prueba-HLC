@@ -69,15 +69,15 @@
 
   // Contenido del carrito
   $total = 0;
-  foreach ($producto as $cod => $juego) {
-    if ($_SESSION['carrito'][$cod] > 0) {
-      $total = $total + ($_SESSION['carrito'][$cod] * $juego['precio']);
+  foreach ($producto as $valor => $juego) {
+    if ($_SESSION['carrito'][$valor] > 0) {
+      $total = $total + ($_SESSION['carrito'][$valor] * $juego['precio']);
       ?>
       <img src="<?php echo $juego['imagen']; ?>"  width="50" height="60" alt="<?php echo $juego['nombre'];?>"><br>
       <?=$juego['nombre']?><br>Precio: <?=$juego['precio']?> €<br>
-      Unidades: <?=$_SESSION['carrito'][$cod]?>
+      Unidades: <?=$_SESSION['carrito'][$valor]?>
       <form action="carrito.php" method="post">
-        <input type="hidden" name="valor" value="<?=$cod?>">
+        <input type="hidden" name="valor" value="<?=$valor?>">
         <input type="hidden" name="accion" value="eliminar">
         <input type="submit" value="Eliminar">
       </form><br><br>
