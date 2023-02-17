@@ -1,19 +1,23 @@
 
 <html>
   <head>
+    <?php
+      session_start()
+    ?>
       <style>
-
-      div {
-        margin: 5px;
+      div {   
+        margin: 400px;
         width: 50px;
         height: 150px;
       }
 
       .left {
+        margin-top: 0px;
         float: left;
       }
 
       .right {
+        margin-top: -550px;
         float: right;
       }
       </style>
@@ -33,12 +37,12 @@
     "fighterz" => array( "nombre" => "Dragon ball fighterz", "precio" => 19.99, "imagen" => "fighterz.jpg")
   );
 
-  foreach ($producto as $codigo => $elemento) {
+  foreach ($producto as $valor => $juego) {
     ?>
-    <img src="<?php echo $elemento['imagen']; ?>"  width="50" height="60" alt="<?php echo $elemento['nombre'];?>"><br>
-    <?=$elemento['nombre']?><br>Precio: <?=$elemento['precio']?> €
+    <img src="<?php echo $juego['imagen']; ?>"  width="50" height="60" alt="<?php echo $juego['nombre'];?>"><br>
+    <?=$juego['nombre']?><br>Precio: <?=$juego['precio']?> €
     <form action="carrito.php" method="post">
-      <input type="hidden" name="codigo" value="<?=$codigo?>">
+      <input type="hidden" name="valor" value="<?=$valor?>">
       <input type="hidden" name="accion" value="comprar">
       <input type="submit" value="Comprar">
     </form><br><br>
@@ -50,30 +54,30 @@
   <h3>Carrito</h3>
   <?php // Crear el carrito
   $accion = $_POST['accion'];
-  $codigo = $_POST['codigo'];
+  $valor = $_POST['valor'];
   if (!isset($_SESSION['carrito'])) {
     $_SESSION['carrito'] = array ("xenoverse" => 0, "xenoverse2" => 0, "kakarot" => 0, "fighterz" => 0);
   }
 
   if ($accion == "comprar") {
-    $_SESSION['carrito'][$codigo]++;
+    $_SESSION['carrito'][$valor]++;
   }
 
   if ($accion == "eliminar") {
-    $_SESSION['carrito'][$codigo]--;
+    $_SESSION['carrito'][$valor]--;
   }
 
-  // Muestra el contenido del carrito
+  // Contenido del carrito
   $total = 0;
-  foreach ($producto as $cod => $elemento) {
+  foreach ($producto as $cod => $juego) {
     if ($_SESSION['carrito'][$cod] > 0) {
-      $total = $total + ($_SESSION['carrito'][$cod] * $elemento['precio']);
+      $total = $total + ($_SESSION['carrito'][$cod] * $juego['precio']);
       ?>
-      <img src="<?php echo $elemento['imagen']; ?>"  width="50" height="60" alt="<?php echo $elemento['nombre'];?>"><br>
-      <?=$elemento['nombre']?><br>Precio: <?=$elemento['precio']?> €<br>
+      <img src="<?php echo $juego['imagen']; ?>"  width="50" height="60" alt="<?php echo $juego['nombre'];?>"><br>
+      <?=$juego['nombre']?><br>Precio: <?=$juego['precio']?> €<br>
       Unidades: <?=$_SESSION['carrito'][$cod]?>
       <form action="carrito.php" method="post">
-        <input type="hidden" name="codigo" value="<?=$cod?>">
+        <input type="hidden" name="valor" value="<?=$cod?>">
         <input type="hidden" name="accion" value="eliminar">
         <input type="submit" value="Eliminar">
       </form><br><br>
