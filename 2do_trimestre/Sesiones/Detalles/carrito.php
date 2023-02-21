@@ -45,7 +45,11 @@
       <input type="hidden" name="valor" value="<?=$valor?>">
       <input type="hidden" name="accion" value="comprar">
       <input type="submit" value="Comprar">
-    </form><br><br>
+    </form>
+    <form action="Detalles.php" method="post">
+          <input type="hidden" name="valor" value="<?=$valor?>">
+          <input type="submit" value="Detalles">
+        </form>
     <?php
   }					
   ?>	
