@@ -29,7 +29,7 @@
   <div class="left">
 <h3>Productos</h3>
 <?php // Declarar prductos
-
+  $_SESSION["productillos"]= $producto;
   $producto = array ( 
     "xenoverse" => array( "nombre" => "Dragon ball xenoverse", "precio" => 10, "imagen" => "xenoverse.jpg", "detalles" => "juego de dragon ball xenoverse"),
     "xenoverse2" => array( "nombre" => "Dragon ball xenoverse 2", "precio" => 20, "imagen" => "xenoverse2.jpg", "detalles" => "segundo juego de dragon ball xenoverse"),
