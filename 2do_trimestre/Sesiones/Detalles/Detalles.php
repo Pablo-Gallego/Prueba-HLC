@@ -14,14 +14,22 @@
   $valor = $_POST['valor'];
 
   $producto = array ( 
-    "xenoverse" => array( "nombre" => "Dragon ball xenoverse", "precio" => 10, "imagen" => "xenoverse.jpg", "detalles" => "juego de dragon ball xenoverse"),
-    "xenoverse2" => array( "nombre" => "Dragon ball xenoverse 2", "precio" => 20, "imagen" => "xenoverse2.jpg", "detalles" => "segundo juego de dragon ball xenoverse"),
-    "kakarot" => array( "nombre" => "Dragon ball kakarot", "precio" => 35, "imagen" => "kakarot.jpg", "detalles" => "juego de dragon ball basado en la historia de son goku"),
-    "fighterz" => array( "nombre" => "Dragon ball fighterz", "precio" => 19.99, "imagen" => "fighterz.jpg", "detalles" => "juego en 2D de dragon ball fighterz")
+    "xenoverse" => array( "nombre" => "Dragon ball xenoverse", "precio" => 10, "imagen" => "xenoverse.jpg", "detalles" => "Juego de dragon ball xenoverse"),
+    "xenoverse2" => array( "nombre" => "Dragon ball xenoverse 2", "precio" => 20, "imagen" => "xenoverse2.jpg", "detalles" => "Segundo juego de dragon ball xenoverse"),
+    "kakarot" => array( "nombre" => "Dragon ball kakarot", "precio" => 35, "imagen" => "kakarot.jpg", "detalles" => "Juego de dragon ball basado en la historia de son goku"),
+    "fighterz" => array( "nombre" => "Dragon ball fighterz", "precio" => 19.99, "imagen" => "fighterz.jpg", "detalles" => "Juego en 2D de dragon ball fighterz")
   );
 
   $numero = $producto[$valor];
-  
+
+  if (!isset($_SESSION['carrito'])) {
+    $_SESSION['carrito'] = array ("xenoverse" => 0, "xenoverse2" => 0, "kakarot" => 0, "fighterz" => 0);
+  }
+
+  if ($accion == "comprar") {
+    $_SESSION['carrito'][$valor]++;
+  }
+
   ?>
   <img src="<?php echo $numero['imagen']; ?>"  width="50" height="60" alt="<?php echo $numero['nombre'];?>"><br><?=$juego['nombre']?><br>
   Precio: <?=$numero['precio']?> €<br>
