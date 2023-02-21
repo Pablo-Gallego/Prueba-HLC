@@ -20,13 +20,13 @@
     "fighterz" => array( "nombre" => "Dragon ball fighterz", "precio" => 19.99, "imagen" => "fighterz.jpg", "detalles" => "juego en 2D de dragon ball fighterz")
   );
 
-  $elemento = $producto[$valor];
+  $numero = $producto[$valor];
   
   ?>
-  <img src="<?php echo $elemento['imagen']; ?>"  width="50" height="60" alt="<?php echo $elemento['nombre'];?>"><br><?=$juego['nombre']?><br>
-  Precio: <?=$elemento['precio']?> €<br>
+  <img src="<?php echo $numero['imagen']; ?>"  width="50" height="60" alt="<?php echo $numero['nombre'];?>"><br><?=$juego['nombre']?><br>
+  Precio: <?=$numero['precio']?> €<br>
   Unidades de este producto en el carrito: <?= $_SESSION["carrito"][$valor] ?>;
-  <br><?= $elemento["detalles"] ?>
+  <br><?= $numero["detalles"] ?>
   <form action="carrito.php" method="post">
     <input type="hidden" name="accion" value="comprar">
     <input type="submit" value="Comprar">
