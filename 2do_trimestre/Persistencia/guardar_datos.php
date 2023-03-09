@@ -11,7 +11,8 @@
   "Domicilio: ".$domicilio."\n".
   "Código Postal: ".$codigo_postal."\n".
   "Localidad: ".$localidad."\n".
-  "Provincia: ".$provincia."\n";
+  "Provincia: ".$provincia."\n".
+  "--------,--------\n";
   // archivo que queremos sobreescribir
   $archivo = "datos.txt";
   if (file_exists($archivo)) {
@@ -31,6 +32,6 @@
   "<li> Código Postal: ".$codigo_postal.
   "<li> Localidad: ".$localidad.
   "<li> Provincia: ".$provincia.
-  "</ul>"
+  "</ul>--------"
   
 ?>
